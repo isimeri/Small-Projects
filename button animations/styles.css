@@ -1,0 +1,129 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --border: 4px;
+}
+body{
+    background-color: #10451d;
+}
+
+.supreme-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    padding: 1rem;
+    width: 200px;
+    background-color: #b7efc5;
+    color: #333;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.border-pop{
+    position: relative;
+}
+.border-pop::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border: var(--border) solid #b7efc5;
+    transition: all 0.1s ease-in-out;
+}
+.border-pop:hover::before{
+    top: calc(var(--border) * -2);
+    bottom: calc(var(--border) * -2);
+    left: calc(var(--border) * -2);
+    right: calc(var(--border) * -2);
+}
+
+
+
+.color-slide{
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.color-slide:hover{
+    color: #b7efc5;
+}
+.color-slide::before{
+    --scale: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #208b3a;
+    transform: scaleX(var(--scale));
+    transition: all 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.color-slide:hover::before{
+    --scale: 1;
+}
+
+
+.chungus{
+    position: relative;
+    background-color: #208b3a;
+    z-index: 1;
+}
+.chungus::after{
+    --scale: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #b7efc5;
+    transform-origin: center;
+    transform: scale(var(--scale));
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+.chungus:hover{
+    color: #b7efc5;
+}
+.chungus:hover::after{
+    --scale: 0;
+}
+
+
+.border-bottom{
+    position: relative;
+    z-index: 1;
+}
+.border-bottom::after{
+    --scale: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: calc(100% - 5px);
+    background-color: #208b3a;
+    transform-origin: center;
+    transform: scaleX(var(--scale));
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+.border-bottom:hover::after{
+    --scale: 1;
+}

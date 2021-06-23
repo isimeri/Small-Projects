@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.supreme-container{
+    height: 100vh;
+    position: relative;
+    background-color: #10451d;
+    overflow: hidden;
+}
+.evil-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #b7efc5;
+    color: #333;
+    white-space: nowrap;
+}
