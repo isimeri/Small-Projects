@@ -15,7 +15,7 @@ document.addEventListener("mousemove", e => {
     }
 });
 evilBtn.addEventListener("click", () => {
-    alert("lmao");
+    alert("lmao, cheater");
 });
 
 function moveButton(moveX, moveY, cenX, cenY){

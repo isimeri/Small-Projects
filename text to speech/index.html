@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="supreme-container">
+        <h1 class="header">Text to Speech</h1>
+        <textarea name="text" id="speech-text" cols="40" rows="10"></textarea>
+        <label class="label speed">Speed
+        <input type="number" name="speed" value="1" id="speed" max="3" min="1" step="0.5"></label>
+        <div class="buttons-container">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+        </div>
+        <p class="description">Type some words inside the big box and press the "Play" button to listen to your browser speak to you.</p>
+    </div>
+</body>
+</html>
